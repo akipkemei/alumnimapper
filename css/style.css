@@ -1,0 +1,91 @@
+/**
+ * AlumniMapper Style Sheet
+ * version 0.1 - July 2013
+ * copyright B.J. Kobben - kobben@itc.nl
+ * published under a Creative Commons License 3.0 (by-nc-sa)
+ */
+
+body {
+    background: #eeeeee;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #000000;
+}
+h1 {
+    font-size: 14px;
+}
+h2 {
+    font-size: 11px;
+}
+#mapDiv {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 964px;
+    height: 504px;
+    padding: 2px;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid #cccccc;
+    background: #ccddf2;
+}
+
+#mapDiv .label {
+    text-align: center;
+    fill: #ff0000;
+    font-size: 3pt;
+}
+
+#messageDiv {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    width: 200px;
+    height: 30px;
+    padding: 4px;
+    overflow: hidden;
+    z-index: 0;
+    text-align: center;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 15px #6a6a6a;
+    background: #888888;
+    display: inline;
+    font-size: 10pt;
+    color: #ffffff;
+}
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sphere {
+    fill: none;
+    stroke: rgb(68,200,245);
+    stroke-width: 3px;
+    fill: rgb(219, 237, 255);
+}
+
+.graticule {
+    fill: none;
+    stroke: rgb(68,200,245);
+    stroke-width: .3px;
+}
+
+.land {
+    fill: rgb(232, 231, 173);
+    stroke: none;
+}
+
+.circles {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 0.3px;
+    fill: rgb(255, 0, 0);
+    fill-opacity: 0.6;
+}
+
+.boundary {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    stroke-width: .8px;
+}
